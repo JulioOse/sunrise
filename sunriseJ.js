@@ -34,7 +34,7 @@ function Info(position) {
 			for(x in data["results"]) {
 				var current = new Date(data["results"][x]).toLocaleTimeString() + ' ';
 				x = x.replace(/_/g, ' ')
-				htmlOut = htmlOut + '<h2>' + x.toUpperCase() +' - ' + current.slice(-11, -1) + '</h2>'
+				htmlOut = htmlOut + '<h2>' + x.toUpperCase() +' - ' + current + '</h2>'
 			}
 			document.getElementById('content').innerHTML = htmlOut;
 		}
