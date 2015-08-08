@@ -32,7 +32,7 @@ function Info(position) {
 			var data = JSON.parse(apiCall.response.slice(11, -2));
 			var htmlOut = ''
 			for(x in data["results"]) {
-				var current = new Date(data["results"][x]).toLocaleTimeString() + ' '
+				var current = new Date(data["results"][x]).toLocaleTimeString() + ' ';
 				x = x.replace(/_/g, ' ')
 				htmlOut = htmlOut + '<h2>' + x.toUpperCase() +' - ' + current.slice(-11, -1) + '</h2>'
 			}
